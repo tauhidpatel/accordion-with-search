@@ -1,0 +1,128 @@
+* {
+    font-family: 'Inter', sans-serif
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    transform: scale(.7) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5E5E5E;
+    margin-top: 2em;
+}
+
+.faq-header input {
+    margin-left: auto;
+    width: 40%;
+    padding: 0.75em;
+    padding-left: 1em;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-top-left-radius: .3em;
+    border-bottom-left-radius: .3em;
+}
+
+.faq-header button {
+    /* margin-right: auto; */
+    padding: 0.75em 1em;
+    background: white;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: none;
+    border-top-right-radius: .3em;
+    border-bottom-right-radius: .3em;
+}
+
+.fa-search:before {
+    color: #1e1e1e;
+    font-size: 1.2em;
+}
+
+.card-header {
+    margin-top: 2em;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-left: 8px solid;
+    border-left-color: #1e1e1e;
+    /* border-bottom: 1px solid #eee;  */
+    color: #1e1e1e;
+}
+
+.container {
+    padding: 0;
+}
+
+.accordion-button {
+  background-color: #fafafa;
+  color: #5E5E5E;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #1e1e1e;
+  /* background-color: red; */
+  color: white;
+}
+
+.accordion-item {
+  background-color: #1a1a1a;
+  margin-top: 1em;
+  /* border-radius: 1em; */
+}
+  
+
+.accordion-body {
+    padding-top: 1em;
+    background-color: white;
+}
+
+.more-help-text {
+    margin-top: 1.3em;
+    margin-bottom: 0;
+    font-weight: 400; 
+    font-size: 18px;
+}
+  
+.more-help-list {
+    padding-left: 0;
+    margin-top: 0.5em;
+}
+
+.more-help-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+a i {
+    margin-right: 0.5em;
+}
+
+textarea {
+    resize: none;
+}
+
+.modal-backdrop {
+    background-color: red;
+ }
+
+ footer {
+    position: fixed;
+    bottom: 10px;
+    left: 45%;
+  }
